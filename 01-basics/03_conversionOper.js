@@ -16,3 +16,15 @@ console.log(score)
 // ""=>false
 // "aditya"=> true
 // null => 0 => false
+
+// ********************Operations*******************
+
+
+console.log('2'+2); // 22
+console.log(2+'2'); // 22
+console.log(2+ 3 + '3'); // 53 because precedence is from left to right
+console.log('2' + 2 + 3); // 223  because precedence is from left to right
+console.log('2' - 1 + '3'); // 13=> in case of minus string convert into a number
+console.log(typeof  +true); // 1 because + before true convert the boolean to number
+
+
