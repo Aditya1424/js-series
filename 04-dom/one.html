@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM </h1>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>Learning DOM</p>
+    <ul class="list">
+        <li class="day">One </li>
+        <li class="day">Two </li>
+        <li class="day">Three </li>
+    </ul>
+</body>
+
+<script>
+    // document object
+    console.log(document);
+
+
+
+
+    // playing with list
+    const list = document.querySelector('.day')
+    list.style.backgroundColor ='red'
+    list.innerHTML = 'Changed Day'
+    list.style.padding = '10px'
+    list.setAttribute('class','days')
+    list.remove()
+
+    // creating new element in DOM
+    const newElem = document.createElement('h2');
+    // edit
+    newElem.textContent = 'New Heading'
+    document.body.appendChild(newElem)
+    const update = document.querySelectorAll('h2')
+    console.log(update)
+    update.forEach( (item)=> item.style.color = 'green' )
+
+    newElem.setAttribute('class','newH2')
+    newElem.style.color = 'orange'
+    // remove
+    newElem.remove()
+    
+
+</script>
+</html>
